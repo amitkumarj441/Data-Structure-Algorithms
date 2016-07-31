@@ -1,1 +1,1 @@
-***Collection of Algorithms and problems related to Mathematics!
+*Collection of Algorithms and problems related to Mathematics!
