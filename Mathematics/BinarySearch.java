@@ -1,4 +1,5 @@
 // Author: Amit Kumar Jaiswal
+// Twitter: @amit_gkp
 
 import java.util.Arrays;
 public class BinarySearch
@@ -20,15 +21,15 @@ public class BinarySearch
 		}
 		return -1;
 	}
-	public static void main(String[] args)
+public static void main(String[] args)
+{
+	int[] whitelist=In.readInts(args[0]);
+	Array.sort(whitelist);
+	while(!StdIn.isEmpty())
 	{
-		int[] whitelist=In.readInts(args[0]);
-		Array.sort(whitelist);
-		while(!StdIn.isEmpty())
-		{
-			int key=StdIn.readInt();
-			if(rank(key,whitelist)==1)
-				StdOut.println(key);
-		}
+		int key=StdIn.readInt();
+		if(rank(key,whitelist)==1)
+		StdOut.println(key);
 	}
+}
 }
